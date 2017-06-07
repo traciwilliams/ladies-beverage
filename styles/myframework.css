@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 
 .grid {
     max-width: 1200px;
