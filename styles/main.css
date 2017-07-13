@@ -1,29 +1,99 @@
-body {
+
+/*========================*/
+/*BASIC SETUP*/
+/*========================*/
+
+
+*
+ {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;   
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
 	background-color: purple;
+	color: #555;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
 }
 
 
+img {
+    width: 100%;
+    height: auto;
+}
 
-.nav ul {
-	background-color: #595959;
+
+/*========================*/
+/*REUSABLE ELEMENTS*/
+/*========================*/  
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container,
+.grid {
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: grey; 
+  }
+
+
+
+h1 {
+	margin-top: 0;
+	font-size: 240%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+
+}
+
+/*========================*/
+/*NAVIGATION*/
+/*========================*/
+
+
+
+.main-nav {
+	background-color: green;
 	color: #fffff;
 	list-style: none;
 	text-align: center;
 	padding: 20px 0 20px 0;
 }
 
-.nav li {
+.main-nav li {
 	display: inline-block;
 	padding-right: 50px;
 }
 
-.nav a {
-	text-decoration: none;
+.main-nav li a:link,
+.main-nav li a:visited {
+	padding: 8px 0;
 	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 5s color 5s;
 }
 
-.nav a:hover {
+.main-nav li a:hover,
+.main-nav li a:active {
 	color: yellow;
+	border-bottom: 2px solid #e67e22;
 }
 
 
