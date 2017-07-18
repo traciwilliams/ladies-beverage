@@ -38,6 +38,7 @@ img {
 
 .row {
     max-width: 1140px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
 }
@@ -45,6 +46,7 @@ img {
 .container,
 .grid {
     max-width: 1140px;
+    max-width: 100%;
     margin: 0 auto;
     background-color: grey; 
   }
@@ -52,9 +54,11 @@ img {
 
 
 h1 {
-	margin-top: 0;
+	margin: 0 auto;
 	font-size: 240%;
+	font-weight: 300;
 	text-transform: uppercase;
+	padding: 40px 0;
 	letter-spacing: 1px;
 	word-spacing: 4px;
 
@@ -97,12 +101,39 @@ h1 {
 }
 
 
+/*========================*/
+/*======= HEADER ==========*/
+/*========================*/
 
+header {
+	height: 100vh;
+}
+
+
+
+/*========================*/
+/*======= THREE PICTURES ==========*/
+/*========================*/
 .three-pics {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
+.three-pics img {
+	transform: scale(1.15);
+	transition: transform 0.5s;
+}
+
+.three-pics img:hover {
+	transform: scale(1.25);
+}
+
+
+
+
+
+
 
 .slider-title {
 	z-index: 10000;
