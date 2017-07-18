@@ -111,28 +111,10 @@ header {
 
 
 
+
 /*========================*/
-/*======= THREE PICTURES ==========*/
+/*======= SLIDER ==========*/
 /*========================*/
-.three-pics {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.three-pics img {
-	transform: scale(1.15);
-	transition: transform 0.5s;
-}
-
-.three-pics img:hover {
-	transform: scale(1.25);
-}
-
-
-
-
-
 
 
 .slider-title {
@@ -228,6 +210,48 @@ header {
 	96% {
 		left: 0%;
 	}
+
+
+
+
+
+
+
+
+/*========================*/
+/*======= THREE PICTURES ==========*/
+/*========================*/
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+.three-pics {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.three-pics img {
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s;
+}
+
+.three-pics img:hover {
+	transform: scale(1.25);
+}
+
+
+
+
+
+/*========================*/
+/*======= FORM ==========*/
+/*========================*/
+
 
 form {
     width: 75%;
