@@ -87,7 +87,14 @@ h3 {
 
 }
 
-
+.clearfix {zoom: 1}
+.clearfix:after {
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
 /*========================*/
 /*======= HEADER ==========*/
 /*========================*/
@@ -199,9 +206,13 @@ header {
 /*========================*/
 /*======= CITIES ==========*/
 /*========================*/
+.featured-box {
+	background-color: green;
+}
 
-.featured-items {
-	//background-color: green;
+
+.featured-items h1 {
+	padding-top: 150px;
 }
 
 .span-1-of-4 {
@@ -211,6 +222,21 @@ header {
 img {
 	width: 100%;
 	height: auto;
+}
+
+
+a:link, 
+a:visited {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 2s color 2s;
+}
+
+a:hover,
+a:active {
+	color: pink;
+	border-bottom: 1px solid green;
 }
 
 
@@ -231,8 +257,16 @@ img {
 	margin-top: -7px;
 }
 
+/*========================*/
+/*QUOTE*/
+/*========================*/
+.quote-section {
+	background-image: url(images/glasses-1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
 
-
+}
 
 
 
