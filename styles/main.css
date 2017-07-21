@@ -17,7 +17,7 @@
 }
 
 html {
-	background-color: purple;
+	//background-color: purple;
 	color: #555;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
@@ -25,10 +25,10 @@ html {
 }
 
 
-img {
-    width: 100%;
-    height: auto;
-}
+// img {
+//     width: 100%;
+//     height: auto;
+// }
 
 
 /*========================*/
@@ -42,13 +42,13 @@ img {
     margin: 0 auto;
     display: flex;
 }
-
+iv
 .container,
 .grid {
     max-width: 1140px;
     max-width: 100%;
     margin: 0 auto;
-    background-color: grey; 
+    //background-color: grey; 
   }
 
 
@@ -57,12 +57,60 @@ h1 {
 	margin: 0 auto;
 	font-size: 240%;
 	font-weight: 300;
+	color: #000;
+	text-transform: uppercase;
+	padding: 100px 40px 40px 40px;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+
+}
+
+h2 {
+	margin: 0 auto;
+	font-size: 200%;
+	font-weight: 300;
 	text-transform: uppercase;
 	padding: 40px 0;
 	letter-spacing: 1px;
 	word-spacing: 4px;
 
 }
+
+h3 {
+	margin: 0 auto;
+	font-size: 180%;
+	font-weight: 300;
+	text-transform: uppercase;
+	//padding: 40px 0;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+
+}
+
+
+/*========================*/
+/*======= HEADER ==========*/
+/*========================*/
+
+header {
+	height: 100vh;
+}
+
+.header-title {
+	font-size: 400%;
+	color: pink;
+}
+
+
+.overlay {
+    position:absolute;
+    top: 440px;
+    left:0;
+    z-index:1;
+}
+
+
+
 
 /*========================*/
 /*NAVIGATION*/
@@ -71,11 +119,12 @@ h1 {
 
 
 .main-nav {
-	background-color: green;
+	background-color: rgba(0,255,0,.3);
+	width: 40%;
 	color: #fffff;
 	list-style: none;
 	text-align: center;
-	padding: 20px 0 20px 0;
+	padding: 10px 0 10px 0;
 }
 
 .main-nav li {
@@ -102,13 +151,215 @@ h1 {
 
 
 /*========================*/
-/*======= HEADER ==========*/
+/*======= COVERR ==========*/
 /*========================*/
-
-header {
-	height: 100vh;
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
 }
 
+
+/*========================*/
+/*======= CITIES ==========*/
+/*========================*/
+
+.featured-items {
+	//background-color: green;
+}
+
+.span-1-of-4 {
+	padding-top: 40px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+/*========================*/
+/*ICONS*/
+/*========================*/
+
+.icon-small {
+	display: inline-block;
+	width: 30px;
+	padding: 17px 20px 20px 0;
+	text-align: center;
+	color: #ccc;
+	font-size: 200%;
+	margin-right: 10px;
+	line-height: 100%;
+	vertical-align: middle;
+	margin-top: -7px;
+}
+
+
+
+
+
+
+/*========================*/
+/*======= THREE PICTURES ==========*/
+/*========================*/
+
+// .three-pics img {
+// 	width: 5%;
+// 	height: auto;
+// }
+.three-pics {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: red;
+}
+
+.three-pics img {
+	width: 33%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s;
+	background-color: yellow;
+}
+
+// .three-pics img:hover {
+// 	transform: scale(1.25);
+// }
+
+
+/*========================*/
+/*======= RECIPE SECTION ==========*/
+/*========================*/
+.recipe-section {
+	background-color: red;
+}
+
+
+
+
+/*========================*/
+/*======= FORM ==========*/
+/*========================*/
+
+
+form {
+    width: 75%;
+    padding: 2em;
+    background-color: pink;
+    border-radius:0.25em;
+    box-shadow:0 0 2em rgba(0,0,0,0.2);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    background-color: coral;
+    height: 50vh;
+
+}
+
+input, 
+select {
+    padding: 0.5em;
+    font-size: 0.875em;
+    background: blue;
+    border: 1px solid #ccc;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0;
+    transition:0.5s;
+}
+
+input:focus,
+select:focus {
+    background:#fff;
+    box-shadow:inset 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.2);
+    outline:0;
+}
+
+
+
+
+.form-field {
+    display: flex;
+    margin-bottom:1em;
+}
+//flex-grow, flex-shrink, flex-basis
+.form-field label {
+    flex: 0 1 3em;
+    padding: 1em;
+    background: #ccc;
+    border: 1px solid #fff;
+    font-size: 0.75em;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1;
+}
+
+.form-field input,
+.form-field select {
+    flex: 1;
+}
+
+.submitButton {
+    flex-direction:row-reverse;
+    //justify-content: flex-end;
+
+}
+
+
+input[type="submit"] {
+    flex: 0 1 40%;
+    padding: 0.5em;
+    font-size: 1rem;
+    text-shadow: 0 1px 0 #fff;
+    background: #b0e35a;
+    border-radius: 0.25em;
+    border: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    color:#fff;
+    background:#cc3f85;
+    text-shadow:0 1px 0 #000;
+}
 
 
 
@@ -210,132 +461,5 @@ header {
 	96% {
 		left: 0%;
 	}
-
-
-
-
-
-
-
-
-/*========================*/
-/*======= THREE PICTURES ==========*/
-/*========================*/
-img {
-	width: 100%;
-	height: auto;
-}
-
-
-.three-pics {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.three-pics img {
-	width: 100%;
-	height: auto;
-	transform: scale(1.15);
-	transition: transform 0.5s;
-}
-
-.three-pics img:hover {
-	transform: scale(1.25);
-}
-
-
-
-
-
-/*========================*/
-/*======= FORM ==========*/
-/*========================*/
-
-
-form {
-    width: 75%;
-    padding: 2em;
-    background-color: pink;
-    border-radius:0.25em;
-    box-shadow:0 0 2em rgba(0,0,0,0.2)
-}
-
-.form-container {
-    display: flex;
-    justify-content: center;
-    background-color: coral;
-    height: 50vh;
-
-}
-
-input, 
-select {
-    padding: 0.5em;
-    font-size: 0.875em;
-    background: blue;
-    border: 1px solid #ccc;
-    border-width: 5px 5px 5px 0;
-    border-radius: 0;
-    transition:0.5s;
-}
-
-input:focus,
-select:focus {
-    background:#fff;
-    box-shadow:inset 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.2);
-    outline:0;
-}
-
-
-
-
-.form-field {
-    display: flex;
-    margin-bottom:1em;
-}
-//flex-grow, flex-shrink, flex-basis
-.form-field label {
-    flex: 0 1 3em;
-    padding: 1em;
-    background: #ccc;
-    border: 1px solid #fff;
-    font-size: 0.75em;
-    text-align: center;
-    text-shadow: 0 1px 0 #fff;
-    line-height: 1;
-}
-
-.form-field input,
-.form-field select {
-    flex: 1;
-}
-
-.submitButton {
-    flex-direction:row-reverse;
-    //justify-content: flex-end;
-
-}
-
-
-input[type="submit"] {
-    flex: 0 1 40%;
-    padding: 0.5em;
-    font-size: 1rem;
-    text-shadow: 0 1px 0 #fff;
-    background: #b0e35a;
-    border-radius: 0.25em;
-    border: 0;
-    transition: 0.3s;
-    cursor: pointer;
-}
-input[type="submit"]:hover {
-    color:#fff;
-    background:#cc3f85;
-    text-shadow:0 1px 0 #000;
-}
-
-
-
 
 

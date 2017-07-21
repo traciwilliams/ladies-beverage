@@ -2,19 +2,115 @@
 <html>
 <head>
 	<title>Hello! Ladies' Night Beverages</title>
-	<meta charset="UTF-8"/>
-	<link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/myframework.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
-
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/myframework.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/ionicons-2.0.1/css/ionicons.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+	
 </head>
 <body>
-	<div class="grid">
-	
-		<header>
+	<header>
+
+		<div class="overlay">	
+			<h1 class="header-title">Thirsty?<br> Check Out Our Drink Specials</h1>
+
+			<nav class="main-nav">	
+					<ul>
+						<li><a href="#">Drinks</a></li>
+						<li><a href="#">Logo</a></li>
+						<li><a href="#">Recipes</a></li>
+					</ul>
+			</nav>	
+		</div><!--end of overlay-->	
+		
+		<div class="homepage-hero-module">
+	    <div class="video-container">
+	        <div class="filter"></div>
+	        <video autoplay loop class="fillWidth">
+	            <source src="Three-Cocktails/MP4/Three-Cocktails.mp4" type="video/mp4" />
+	            <source src="Three-Cocktails/WEBM/Three-Cocktails.webm" type="video/webm" />
+	            <source src="Three-Cocktails/OGV/Three-Cocktails.ogv" type="video/webm" />
+	        </video>
+	        <!--<div class="poster hidden">
+	            <img src="Three-Cocktails/Snapshot/Three-Cocktails.jpg" alt="wine glasses">
+	        </div>-->
+	    </div><!--end of homepage-hero-module-->
+		</div><!--end of video-container-->
+	</header>	
+
+<section class="featured-items">
+	<div class="row">
+		<h1>We're currently in these cities</h1>
+	</div>
+	<div clas="row">
+		<div class="col span-1-of-4">
+			<img src="styles/images/chicago-neal-kharawala-154393.jpg" alt="Chicago">
+			<h3>Chicago</h3>
+			<div>
+			<i class="ion-ios-person icon-small"></i>1600+ happy drinkers<br>
+			<i class="ion-ios-star icon-small">	
+			</i>60+ top mixologists<br>
+			 <i class="ion-social-twitter icon-small"></i>
+			<a href="#">@drinks_CHI</a>
+			</div>
+		</div><!--end span 1 of 4-->
+
+		<div class="col span-1-of-4">
+			<img src="styles/images/new-york-mark-asthoff-19910.jpg" alt="New York">
+			<h3>New York</h3>
+			<div>
+			<i class="ion-ios-person icon-small"></i>1000+ happy drinkers<br>
+			<i class="ion-ios-star icon-small">	
+			</i>40+ top mixologists<br>
+			 <i class="ion-social-twitter icon-small"></i>
+			<a href="#">@drinks_NY</a>
+			</div>
+		</div><!--end span 1 of 4-->
+
+		<div class="col span-1-of-4">
+			<img src="styles/images/atlanta-joey-kyber-99425.jpg" alt="Atlanta">
+			<h3>Atlanta</h3>
+			<div>
+			<i class="ion-ios-person icon-small"></i>600+ happy drinkers<br>
+			<i class="ion-ios-star icon-small">	
+			</i>160+ top mixologists<br>
+			 <i class="ion-social-twitter icon-small"></i>
+			<a href="#">@drinks_ATL</a>
+			</div>
+		</div><!--end span 1 of 4-->
+
+		<div class="col span-1-of-4">
+			<img src="styles/images/los-angeles-benni-talent-238911.jpg" alt="Los Angeles">
+			<h3>Los Angeles</h3>
+			<div>
+			<i class="ion-ios-person icon-small"></i>800+ happy drinkers<br>
+			<i class="ion-ios-star icon-small">	
+			</i>200+ top mixologists<br>
+			 <i class="ion-social-twitter icon-small"></i>
+			<a href="#">@drinks_LA</a>
+			</div>
+		</div><!--end span 1 of 4-->
+	</div>
+</section>
+		
+
+
+
+
+
+
+	<!-- <div class="grid">
+		
 			<div class="row">
 				<h1>Hello! Ladies' Night Drink Specials</h1>
 			</div>
@@ -24,13 +120,8 @@
 					<li><a href="#">Drink</a></li>
 					<li><a href="#">Logo</a></li>
 					<li><a href="#">Recipes</a></li>
-				</ul>
-			</nav>	
-
-
-		
-
-	
+				</ul> -->
+			<!-- </nav>	
 		<div class="slider-container">
 			<figure>
 				<div class="slide">
@@ -47,8 +138,8 @@
 				<p class="slider-title">Slide 3:<br> Some Text Here</p>
 					<img src="styles/images/glasses3.jpg">
 				</div>
-			
-				<div class="slide">
+			 -->
+				<!-- <div class="slide">
 				<p class="slider-title">Slide Four:<br> Some Text Here</p>
 					<img src="styles/images/glasses2.jpg">
 				</div>			
@@ -59,18 +150,30 @@
 					<img src="styles/images/glasses1.jpg">
 				</div>			
 			</figure>	
-		</div><!--end of slider-container div-->		
+		</div --><!--end of slider-container div-->	
+
 	
-		<article>
-			<h1>Welcome to ...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra rutrum rutrum. Proin pellentesque, mauris nec auctor finibus, arcu lacus pellentesque augue, ac dictum lectus tortor id libero.</h1>
+		<!-- <section class="welcome-section">
+			<h2>Welcome to ...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra rutrum rutrum. Proin pellentesque, mauris nec auctor finibus, arcu lacus pellentesque augue, ac dictum lectus tortor id libero.</h2>
+			<h2>Welcome to ...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra rutrum rutrum.</h2>
+			<h2>Welcome  ...</h2>
 			
-		</article>
+		</section>
 	</header>		
 
-<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+ -->
 
-		 <div class="three-pics">
-			<figure>
+
+
+
+
+
+<!-- 
+	<section class="three-pics">
+		<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+
+		 <div class="three-pics"> -->
+		<!-- 	<figure>
 				<img src="styles/images/glasses-1.jpg">
 				<figcaption>Some Text Here</figcaption>
 			</figure>
@@ -81,178 +184,77 @@
 			<figure>
 				<img src="styles/images/glasses-3.jpg">
 				<figcaption>Some Text Here</figcaption>
-			</figure>
-		</div> <!--end of three-pic div-->
+			</figure> -->
+		<!-- </div>  --><!--end of three-pic div-->
+	<!-- </section>	 -->
 
 
 
 
 
 
-
-
-
-
+<!-- 
+	<section class="recipe-section">
 		<h1>Have a recipe? Add it to the list!</h1>
-	<div class="form-container">	
-		<form action="recipe.html" method="post" class="fan-form" onSubmit="alert('Thank you for your recipe has been submitted.')"> 
+			<div class="form-container">	
+				<form action="recipe.html" method="post" class="fan-form" onSubmit="alert('Thank you for your recipe has been submitted.')"> 
 		
-			<div>
-				<label for="firstname">Name</label>
-					<input type="text" id="firstname" name="firstname"  placeholder="first name">
-					<input type="text" id="lastname" name="lastname"  placeholder="last name">
-			</div>
-			<div>
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email">	
-			</div>
-			<!-- <div>
-				<label for="birthday">Birthday</label>
-				<select id="dob" name="dob_day">
-					<option selected disabled>dd</option>
-					<option value="">1</option>
-					<option value="">2</option>
-					<option value="">3</option>
-					<option value="">4</option>
-					<option value="">5</option>
-					<option value="">6</option>
-					<option value="">7</option>
-					<option value="">8</option>
-					<option value="">9</option>
-					<option value="">10</option>
-					<option value="">11</option>
-					<option value="">12</option>
-					<option value="">13</option>
-					<option value="">14</option>
-					<option value="">15</option>
-					<option value="">16</option>
-					<option value="">17</option>
-					<option value="">18</option>
-					<option value="">19</option>
-					<option value="">20</option>
-					<option value="">21</option>
-					<option value="">22</option>
-					<option value="">23</option>
-					<option value="">24</option>
-					<option value="">25</option>
-					<option value="">26</option>
-					<option value="">27</option>
-					<option value="">28</option>
-					<option value="">29</option>
-					<option value="">30</option>
-					<option value="">31</option>
-			  	</select>
-			  	<select name="dob_month">
-					<option selected disabled>mm</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
-			 	</select>
-			 	<select name="dob_year">
-					<option selected disabled>yyyy</option>
-					<option value="2014">2014</option>
-					<option value="2013">2013</option>
-					<option value="2012">2012</option>
-					<option value="2011">2011</option>
-					<option value="2010">2010</option>
-					<option value="2009">2009</option>
-					<option value="2008">2008</option>
-					<option value="2007">2007</option>
-					<option value="2006">2006</option>
-					<option value="2005">2005</option>
-					<option value="2004">2004</option>
-					<option value="2003">2003</option>
-					<option value="2002">2002</option>
-					<option value="2001">2001</option>
-					<option value="2000">2000</option>
-					<option value="1999">1999</option>
-					<option value="1998">1998</option>
-					<option value="1997">1997</option>
-					<option value="1996">1996</option>
-					<option value="1995">1995</option>
-					<option value="1994">1994</option>
-					<option value="1993">1993</option>
-					<option value="1992">1992</option>
-					<option value="1991">1991</option>
-					<option value="1990">1990</option>
-					<option value="1989">1989</option>
-					<option value="1988">1988</option>
-					<option value="1987">1987</option>
-					<option value="1986">1986</option>
-					<option value="1985">1985</option>
-					<option value="1984">1984</option>
-					<option value="1983">1983</option>
-					<option value="1982">1982</option>
-					<option value="1981">1981</option>
-					<option value="1980">1980</option>
-				</select>
-			</div> -->
-			<div>
-				<label for="state">State</label>
-				<select id="state" name="state">
-					<option selected disabled>Alabama</option>
-					<option value="Alaska">Alaska</option>
-					<option value="">need other states</option>
-				</select>
-			</div>
+				<div>
+					<label for="firstname">Name</label>
+						<input type="text" id="firstname" name="firstname"  placeholder="first name">
+						<input type="text" id="lastname" name="lastname"  placeholder="last name">
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email">	
+				</div>
+			
 
 
-			<!-- <div>
+				<div>
 				<h2>Would you like to receive emails about other recipes? </h2>
 
-				<label for="format">yes or no?</label>
-				<select id="format" name="format">
-					<option selected disabled>Yes</option>
-					<option value="">No</option>
-				</select>
+					<label for="format">yes or no?</label>
+					<select id="format" name="format">
+						<option selected disabled>Yes</option>
+						<option value="">No</option>
+					</select>
 
-				<label for="format">text or html?</label>
-				<select id="format" name="format">
-					<option selected disabled>HTML</option>
-					<option value="">Text</option>
-					<option value="">Both</option>
-				</select>
-			</div> -->
-			<div>
-				<textarea rows="4" cols="50" name="recipebox" form="recipebox">
-Enter recipe here...</textarea>	
-			</div>
+					<label for="format">text or html?</label>
+					<select id="format" name="format">
+						<option selected disabled>HTML</option>
+						<option value="">Text</option>
+						<option value="">Both</option>
+					</select>
+				</div> 
 
+				<div>
+				<textarea rows="4" cols="50" name="recipebox" form="recipebox">Enter recipe here...</textarea>	
+				</div>
 
-			<div class="submitButton">
-				<input type="submit" value="Submit Recipe">
-				
-			</div>
-			<p>By submitting this form, you are granting us permission to email you. You may unsubscribe via the link found at the bottom of every email. (See our Email Privacy Policy for details.) </p>
-		</div><!--form-container-->	
-			</form>
-
-
-
-
-		<footer>
-			<p>Created by Traci Williams</p>
+				<div class="submitButton">
+					<input type="submit" value="Submit Recipe">
+				</div>
+				<p>By submitting this form, you are granting us permission to email you. You may unsubscribe via the link found at the bottom of every email. (See our Email Privacy Policy for details.) </p>
 			
-		
-			<nav class="main-nav">	
-				<ul>
-					<li><a href="#">Drink</a></li>
-					<li><a href="#">Logo</a></li>
-					<li><a href="#">Recipes</a></li>
-				</ul>
-			</nav>	
-			
-		</footer>
-	</div><!--end of grid div -->
+			</form> -->
+		<!-- </div> --><!--form-container-->	
+	<!-- </section>		
+
+	<footer>
+		<p>Created by Traci Williams</p>
+		<nav class="main-nav">	
+			<ul>
+				<li><a href="#">Drink</a></li>
+				<li><a href="#">Logo</a></li>
+				<li><a href="#">Recipes</a></li>
+			</ul>
+		</nav>	
+	</footer>
+	</div> --><!--end of grid div -->
+
+
+
 <script src="scripts/app.js"></script>
 </body>
 </html>
