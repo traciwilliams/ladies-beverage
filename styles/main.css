@@ -207,7 +207,7 @@ header {
 /*======= CITIES ==========*/
 /*========================*/
 .featured-box {
-	background-color: green;
+	background-color: lightgrey;
 }
 
 
@@ -226,7 +226,8 @@ img {
 
 
 a:link, 
-a:visited {
+a:visited,
+input[type=submit] {
 	color: black;
 	text-decoration: none;
 	border-bottom: 1px solid transparent;
@@ -234,7 +235,9 @@ a:visited {
 }
 
 a:hover,
-a:active {
+a:active,
+input[type=submit]:hover,
+input[type=submit]:active {
 	color: pink;
 	border-bottom: 1px solid green;
 }
@@ -258,17 +261,38 @@ a:active {
 }
 
 /*========================*/
-/*QUOTE*/
+/*TOAST*/
 /*========================*/
-.quote-section {
-	background-image: url(images/glasses-1.jpg);
+.toast-section {
+	background-image: url(images/glasses1.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
 
 }
 
+.toast-section h1 {
+	color: white;
+}
 
+
+.toast  {
+	color: pink;
+	text-transform: none;
+}
+
+// blockquote {
+// 	font-size: 200%;
+// 	//padding: 2%;
+// 	font-style: italic;
+// 	//line-height: 145%;
+// 	//position: relative;
+// 	//margin-top: 40px;
+// 	margin: 0 auto;
+// 	//width: 100%;
+// 	text-align: center;
+// 	background-color: red;
+// }
 
 /*========================*/
 /*======= THREE PICTURES ==========*/
@@ -311,89 +335,28 @@ a:active {
 /*========================*/
 /*======= FORM ==========*/
 /*========================*/
-
-
 form {
-    width: 75%;
-    padding: 2em;
-    background-color: pink;
-    border-radius:0.25em;
-    box-shadow:0 0 2em rgba(0,0,0,0.2);
-}
-
-.form-container {
-    display: flex;
-    justify-content: center;
-    background-color: coral;
-    height: 50vh;
-
-}
-
-input, 
-select {
-    padding: 0.5em;
-    font-size: 0.875em;
-    background: blue;
-    border: 1px solid #ccc;
-    border-width: 5px 5px 5px 0;
-    border-radius: 0;
-    transition:0.5s;
-}
-
-input:focus,
-select:focus {
-    background:#fff;
-    box-shadow:inset 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.2);
-    outline:0;
+	font-size: 150%;
+	width: 60%;
+	margin: 0 auto;
+	//background-color: red;
 }
 
 
-
-
-.form-field {
-    display: flex;
-    margin-bottom:1em;
-}
-//flex-grow, flex-shrink, flex-basis
-.form-field label {
-    flex: 0 1 3em;
-    padding: 1em;
-    background: #ccc;
-    border: 1px solid #fff;
-    font-size: 0.75em;
-    text-align: center;
-    text-shadow: 0 1px 0 #fff;
-    line-height: 1;
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
 }
 
-.form-field input,
-.form-field select {
-    flex: 1;
+textarea {
+	height: 100px;
 }
 
-.submitButton {
-    flex-direction:row-reverse;
-    //justify-content: flex-end;
-
-}
-
-
-input[type="submit"] {
-    flex: 0 1 40%;
-    padding: 0.5em;
-    font-size: 1rem;
-    text-shadow: 0 1px 0 #fff;
-    background: #b0e35a;
-    border-radius: 0.25em;
-    border: 0;
-    transition: 0.3s;
-    cursor: pointer;
-}
-input[type="submit"]:hover {
-    color:#fff;
-    background:#cc3f85;
-    text-shadow:0 1px 0 #000;
-}
 
 
 
