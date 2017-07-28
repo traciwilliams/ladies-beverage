@@ -208,7 +208,7 @@ header {
 /*======= CITIES ==========*/
 /*========================*/
 .featured-box {
-	background-color: lightgrey;
+	background-color: #fff;
 }
 
 
@@ -268,7 +268,7 @@ input[type=submit]:active {
 	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/glasses2.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	height: 100vh;
+	height: 50vh;
 
 }
 
@@ -277,14 +277,14 @@ input[type=submit]:active {
 }
 
 
-.toast  {ƒ
+.toast  {
 	text-transform: none;
 	margin: 0 auto;
 	font-size: 400%;
 	font-weight: 300;
 	color: #000;
 	//text-transform: uppercase;
-	padding: 40px 40px 40px 140px;
+	padding: 100px 40px 40px 140px;
 	letter-spacing: 1px;
 	word-spacing: 4px;
 }
@@ -411,7 +411,6 @@ footer {
 
 footer p {
 	color: #888;
-	color: yellow;
 	text-align: center;
 	margin-top: 30px;
 }
