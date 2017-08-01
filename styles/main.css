@@ -106,7 +106,8 @@ header {
 
 .header-title {
 	font-size: 400%;
-	color: pink;
+	color: #ebbdf1;
+;
 }
 
 
@@ -253,7 +254,7 @@ input[type=submit]:active {
 	width: 30px;
 	padding: 17px 20px 20px 0;
 	text-align: center;
-	color: #ccc;
+	color: #ebbdf1;
 	font-size: 200%;
 	margin-right: 10px;
 	line-height: 100%;
@@ -311,6 +312,8 @@ input[type=submit]:active {
 
 .section-form {
 	background-color: lightgrey;
+	background-color: #ebbdf1;
+
 }
 
 
