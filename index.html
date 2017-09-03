@@ -3,33 +3,25 @@
 <head>
 	<title>Hello! Ladies' Night Beverages</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/myframework.css">
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/ionicons-2.0.1/css/ionicons.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-
-	
+	<link href="https://fonts.googleapis.com/css?family=Oregano:400,400i" rel="stylesheet">	
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-
 		<div class="overlay">	
 			<h1 class="header-title">Thirsty?<br> Check Out Our Drink Specials</h1>
-
 			<nav class="main-nav">	
-					<ul>
-						<li><a href="#drinks">Drinks</a></li>
-						<li><a href="#">&nbsp</a></li>
-						<li><a href="#recipes">Recipes</a></li>
-					</ul>
+				<ul>
+					<li><a href="#drinks">Drinks</a></li>
+					<li><a href="#">&nbsp</a></li>
+					<li><a href="#recipes">Recipes</a></li>
+				</ul>
 			</nav>	
 		</div><!--end of overlay-->	
 		
@@ -53,25 +45,23 @@
 		<div class="row">
 			<h1>We're currently in these cities</h1>
 		</div>
-
-
 		<div class="row">
 			<div class="col span-1-of-4">
-				<img src="styles/images/chicago-neal-kharawala-154393.jpg" alt="Chicago">
+				<img src="styles/images/chicago-neal-kharawala-154393.jpg" alt="Chicago" id="chicago">
 				<h3>Chicago</h3>
-				<div>
-				<i class="ion-ios-person icon-small"></i>1600+ happy drinkers<br>
-				<i class="ion-ios-star icon-small">	
-				</i>60+ top mixologists<br>
-				 <i class="ion-social-twitter icon-small"></i>
-				<a href="#">@drinksCHI</a>
+				<div class="icons">
+					<i class="ion-ios-person icon-small"></i>1600+ happy drinkers<br>
+					<i class="ion-ios-star icon-small">	
+					</i>60+ top mixologists<br>
+					 <i class="ion-social-twitter icon-small"></i>
+					<a href="#">@drinksCHI</a>
 				</div>
 			</div><!--end span 1 of 4-->
 
 			<div class="col span-1-of-4">
 				<img src="styles/images/new-york-mark-asthoff-19910.jpg" alt="New York">
 				<h3>New York</h3>
-				<div>
+				<div class="icons">
 				<i class="ion-ios-person icon-small"></i>1000+ happy drinkers<br>
 				<i class="ion-ios-star icon-small">	
 				</i>40+ top mixologists<br>
@@ -83,7 +73,7 @@
 			<div class="col span-1-of-4">
 				<img src="styles/images/atlanta-joey-kyber-99425.jpg" alt="Atlanta">
 				<h3>Atlanta</h3>
-				<div>
+				<div class="icons">
 				<i class="ion-ios-person icon-small"></i>600+ happy drinkers<br>
 				<i class="ion-ios-star icon-small">	
 				</i>160+ top mixologists<br>
@@ -95,7 +85,7 @@
 			<div class="col span-1-of-4">
 				<img src="styles/images/los-angeles-benni-talent-238911.jpg" alt="Los Angeles">
 				<h3>Los Angeles</h3>
-				<div>
+				<div class="icons">
 				<i class="ion-ios-person icon-small"></i>800+ happy drinkers<br>
 				<i class="ion-ios-star icon-small">	
 				</i>200+ top mixologists<br>
@@ -124,13 +114,23 @@
 
  <section class="lorem-section" id="drinks">
 	<div class="row">
-		<h1>Drink of the Day</h1>
+		<h1>Drink Special of the Day<br>"The Harvester"</h1>
 	</div>
-	<div clas="row">
-		<div>
-			<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra rutrum rutrum. Proin pellentesque, mauris nec auctor finibus, arcu lacus pellentesque augue, ac dictum lectus tortor id libero
-			</h3>
-		</div>	
+	<div class="row">
+		<div class="col span-1-of-2">
+	
+			<ul class="ingredients">
+				<li>1.5 oz silver tequila</li>
+				<li>4 oz pulp free orange juice</li>
+				<li>1 wedge lime</li>
+				<li>1.5 oz triple sec</li>
+				<li>4 oz pineapple juice</li>
+			</ul>
+		</div>
+		<div class="col span-2-of-2">		
+				<p class="instructions">Pour all ingredients except the wedge of lime and umbrella into a shaker. Shake well and strain into a glass. Then squeeze lime into drink and add umbrella.</p>
+		</div>
+			
 	</div>
 </section>
 
@@ -143,41 +143,42 @@
 	<div class="row">
 		<form method="post" action="#" class="contact-form">
 			<div class="row">
-				<div class="col span-1-of-3">
+				<div class="col span-1-of-2">
 				<label for="name">Name</label>
 				</div>
 
-				<div class="col span-2-of-3">
+				<div class="col span-2-of-2">
 				<input type="text" name="name" id="name" placeholder="Your name" required>
 				</div>
 			</div>	
 
 
 			<div class="row">
-				<div class="col span-1-of-3">
+				<div class="col span-1-of-2">
 				<label for="name">Email</label>
 				</div>
 
-				<div class="col span-2-of-3">
+				<div class="col span-2-of-2">
 				<input type="email" name="email" id="email" placeholder="Your email" required>
 				</div>
-			</div>	
-			<div class="row">
-				<div class="col span-1-of-3">
+			</div>
+			<div>	
+			<!-- <div class="row"> -->
+				<div class="col span-1-of-2">
 				<label>What is your recipe?</label>
 			</div>
 	
-			<div clas="col span-2-of-3">
-				<textarea name="message" placeholder="Your recipe">	
+			<div clas="col span-2-of-2">
+				<textarea name="message" placeholder="Your recipe" rows="50" cols="50">	
 				</textarea>
 			</div>			
-	<div class="row">
-		<div class="col span-1-of-3">
+	<!-- <div class="row"> -->
+		<div class="col span-1-of-2">
 		<label>&nbsp;</label>
 		</div>
-		<div class="col span-2-of-3">
+		<div class="col span-2-of-2">
 			<input type="submit" value="send it">
-		</div>	
+		<!-- </div>	 -->
 	</div>	
 	</form>	
 	</div>

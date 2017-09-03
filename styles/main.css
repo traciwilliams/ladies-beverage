@@ -20,6 +20,7 @@ html {
 	//background-color: purple;
 	color: #555;
 	font-family: 'Lato', sans-serif;
+	font-family: 'Oregano', cursive;
 	font-weight: 300;
 	font-size: 18px;
 }
@@ -37,16 +38,16 @@ html {
 
 
 .row {
-    max-width: 1140px;
-    max-width: 100%;
+	width: 100%;
+    //max-width: 1140px;
     margin: 0 auto;
     display: flex;
 }
-iv
+
 .container,
 .grid {
+    width: 100%;
     max-width: 1140px;
-    max-width: 100%;
     margin: 0 auto;
     //background-color: grey; 
   }
@@ -55,7 +56,7 @@ iv
 
 h1 {
 	margin: 0 auto;
-	font-size: 240%;
+	font-size: 300%;
 	font-weight: 300;
 	color: #000;
 	text-transform: uppercase;
@@ -69,7 +70,7 @@ h1 {
 h2 {
 	margin: 0 auto;
 	font-size: 200%;
-	font-weight: 300;
+	//font-weight: 300;
 	text-transform: uppercase;
 	padding: 40px 0;
 	letter-spacing: 1px;
@@ -105,17 +106,19 @@ header {
 }
 
 .header-title {
-	font-size: 400%;
+	//padding-bottom: 10px;
+	//margin-bottom: 1px;
+	font-size: 350%;
 	color: #ebbdf1;
-;
 }
 
 
 .overlay {
     position:absolute;
-    top: 440px;
-    left:0;
+    top: 40%;
+    left: 10%;
     z-index:1;
+    //background-color: gray;
 }
 
 
@@ -319,7 +322,7 @@ input[type=submit]:active {
 
 form {
 	font-size: 150%;
-	width: 60%;
+	width: 50%;
 	padding-bottom: 150px;
 	margin: 0 auto;
 }
@@ -348,7 +351,7 @@ textarea {
 footer {
 	background-color: #333;
 	padding: 50px;
-	font-size: 90%;
+	font-size: 150%;
 }
 
 .footer-nav {
@@ -420,145 +423,432 @@ footer p {
 
 
 
-
-
-
 /*========================*/
-/*======= THREE PICTURES ==========*/
+/*MEDIA QUERIES*/
 /*========================*/
 
-// .three-pics img {
-// 	width: 5%;
-// 	height: auto;
-// }
-// .three-pics {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	background-color: red;
-// }
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	.overlay {
+	    position:absolute;
+	    top: 50%;
+	    left: 10%;
+	    z-index:1;
+	    margin: 0;
+	    padding: 0;
+	    //background-color: gray;
+	}
 
-// .three-pics img {
-// 	width: 33%;
-// 	height: auto;
-// 	transform: scale(1.15);
-// 	transition: transform 0.5s;
-// 	background-color: yellow;
-// }
+	.header-title {
+		padding: 0;
+		margin: 0;
+	}
+	
+	.featured-items {
+		width: 90%;
+		margin: 0 auto;
+	}
 
-// .three-pics img:hover {
-// 	transform: scale(1.25);
-// }
-
-
-/*========================*/
-/*======= RECIPE SECTION ==========*/
-/*========================*/
-// .recipe-section {
-// 	background-color: red;
-// }
+	.featured-box {
+	background-color: #fff;
+	}
 
 
+	.featured-items h1 {
+		padding-top: 75px;
+	}
+
+	.span-1-of-4 {
+		padding-top: 20px;
+	}
+
+	img {
+		width: 80%;
+		height: auto;
+	}
+	.icons {
+		line-height: 20px;
+	}
+
+	.toast  {
+		text-transform: none;
+		margin: 0 auto;
+		padding: 60px;
+		font-size: 400%;
+		font-weight: 300;
+		color: #000;
+	}
+	
+	.lorem-section {
+		height: 80vh;
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.ingredients,
+	.instructions {
+		font-size: 150%;
+	}
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+	.overlay {
+	    position:absolute;
+	    top: 60%;
+	    left: 10%;
+	    z-index:1;
+	    margin: 0;
+	    padding: 0;
+	    //background-color: gray;
+	}
+
+	.header-title {
+		font-size: 250%;
+		padding: 0;
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 180%;
+	}
+
+	h3 {
+		font-size: 150%;
+	}
+	
+	.featured-items {
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.featured-box {
+		background-color: #fff;
+	}
+
+
+	.featured-items h1 {
+		padding-top: 75px;
+	}
+
+	.span-1-of-4 {
+		padding-top: 20px;
+	}
+
+	img {
+		width: 80%;
+		height: auto;
+	}
+
+	.icons {
+		line-height: 10px;
+	}
+
+	.toast  {
+		text-transform: none;
+		margin: 0 auto;
+		padding: 60px;
+		font-size: 325%;
+		color: #000;
+	}
+	
+	.lorem-section {
+		height: 80vh;
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.ingredients,
+	.instructions {
+		font-size: 140%;
+	}
+
+}
 
 
 
-/*========================*/
-/*======= SLIDER ==========*/
-/*========================*/
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.overlay {
+	    position:absolute;
+	    top: 55%;
+	    left: 10%;
+	    z-index:1;
+	    margin: 0;
+	    padding: 0;
+	    //background-color: gray;
+	}
+
+	.header-title {
+		font-size: 225%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.main-nav {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 180%;
+	}
+
+	h3 {
+		font-size: 120%;
+	}
+	
+	.featured-items {
+		width: 85%;
+		height: 75vh;
+		margin: 0 auto;
+	}
+	
+	.icons {
+		display: none;
+	}
 
 
-// .slider-title {
-// 	z-index: 10000;
-// 	font-size: 90px;
-// 	text-align: left;
-// 	position: absolute;
-// 	width: 20%;
-// 	color: pink;
-// 	padding-top: 50px;
-// 	padding-left: 20px;
-// }
+	.featured-items h1 {
+		padding-top: 75px;
+	}
 
-// .slider-container {
-// 	overflow: hidden;
-// 	height: 350px;
-// }
+	.span-1-of-4 {
+		padding-top: 20px;
+	}
 
-// .slider-container figure div {
-// 	width: 20%;
-// 	float: left;
-// }
+	img {
+		width: 80%;
+		height: auto;
+	}
 
-// .slider-container figure img {
-// 	width: 100%;
-// 	float: left;
-// }
+	.icons {
+		line-height: 10px;
+	}
 
-// .slider-container figure {
-// 	position: relative;
-// 	width: 500%;
-// 	margin: 0;
-// 	left: 0;
-// 	animation-name: mySlider;
-// 	animation-duration: 20s;
-// 	animation-timing-function: ease-in-out;
-// 	animation-delay: 0s;
-// 	animation-iteration-count: infinite;
-// }
-
-// @keyframes mySlider {
-// 	0% {
-// 		left: 0%;
-// 	}
-
-// 	10% {
-// 		left: 0%;
-// 	}
+	.toast  {
+		text-transform: none;
+		margin: 0 auto;
+		padding: 60px;
+		font-size: 250%;
+		color: #000;
+	}
+	
+	.lorem-section {
+		height: 80vh;
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.ingredients,
+	.instructions {
+		font-size: 120%;
+	}
 
 
-// 	12% {
-// 		left: -100%;
-// 	}
-// 	22% {
-// 		left: -100%;
-// 	}
-// 	24% {
-// 		left: -200%;
-// 	}
-// 	34% {
-// 		left: -200%;
-// 	}
-// 	36% {
-// 		left: -300%;
-// 	}
-// 	46% {
-// 		left: -300%;
-// 	}
-// 	48% {
-// 		left: -400%;
-// 	}
-// 	58% {
-// 		left: -400%;
-// 	}
-// 	60% {
-// 		left: -300%;
-// 	}
-// 	70% {
-// 		left: -300%;
-// 	}
-// 	72% {
-// 		left: -200%;
-// 	}
-// 	82% {
-// 		left: -200%;
-// 	}
-// 	84% {
-// 		left: -100%;
-// 	}
-// 	94% {
-// 		left: -100%;
-// 	}
-// 	96% {
-// 		left: 0%;
-// 	}
+
+	form {
+		font-size: 125%;
+		width: 50%;
+		//padding-bottom: 150px;
+		margin: 0 auto;
+	}
+
+
+	footer {
+		background-color: #333;
+		padding: 50px;
+		font-size: 125%;
+	}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.overlay {
+	    position:absolute;
+	    top: 55%;
+	    left: 10%;
+	    z-index:1;
+	    margin: 0;
+	    padding: 0;
+	    //background-color: gray;
+	}
+
+	.header-title {
+		font-size: 200%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.main-nav {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 180%;
+	}
+
+	h3 {
+		font-size: 120%;
+	}
+	
+	.featured-items {
+		width: 85%;
+		height: 75vh;
+		margin: 0 auto;
+	}
+	
+	.icons {
+		display: none;
+	}
+
+
+	.featured-items h1 {
+		padding-top: 75px;
+	}
+
+	.span-1-of-4 {
+		padding-top: 20px;
+	}
+
+	img {
+		width: 80%;
+		height: auto;
+	}
+
+	.icons {
+		line-height: 10px;
+	}
+
+	.toast  {
+		text-transform: none;
+		margin: 0 auto;
+		padding: 60px;
+		font-size: 250%;
+		color: #000;
+	}
+	
+	.lorem-section {
+		height: 80vh;
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.ingredients,
+	.instructions {
+		font-size: 120%;
+	}
+
+
+
+	form {
+		font-size: 125%;
+		width: 50%;
+		//padding-bottom: 150px;
+		margin: 0 auto;
+	}
+
+
+	footer {
+		background-color: #333;
+		padding: 50px;
+		font-size: 125%;
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.overlay {
+	    position:absolute;
+	    top: 55%;
+	    left: 10%;
+	    z-index:1;
+	    margin: 0;
+	    padding: 0;
+	    //background-color: gray;
+	}
+
+	.header-title {
+		font-size: 175%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.main-nav {
+		width: 80%;
+		display: none;
+	}
+
+	h1 {
+		font-size: 120%;
+	}
+
+	h3 {
+		font-size: 70%;
+	}
+	
+
+
+	.featured-items {
+		display: none;
+	}
+	
+	.icons {
+		display: none;
+	}
+
+
+	.featured-items h1 {
+		padding-top: 75px;
+	}
+
+	.span-1-of-4 {
+		padding-top: 20px;
+	}
+
+	.icons {
+		line-height: 10px;
+	}
+
+	.toast  {
+		text-transform: none;
+		margin: 0 auto;
+		padding: 60px;
+		font-size: 200%;
+		color: #000;
+	}
+	
+	.lorem-section {
+		height: 80vh;
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.ingredients,
+	.instructions {
+		font-size: 110%;
+	}
+
+
+
+	form {
+		font-size: 125%;
+		width: 100%;
+		//padding-bottom: 150px;
+		margin: 0 auto;
+	}
+
+
+	footer {
+		background-color: #333;
+		padding: 30px;
+		font-size: 100%;
+	}
+}
+
 
 
